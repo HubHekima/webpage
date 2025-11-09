@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --BACKGROUNDCOLOR: #ff4500;
+    --GRAYDARK-COLOR: #4d4c4c;
+    --TEXT-COLOR: #ffffff;
+
+    --BOXNAVSHADOW: hsla(0, 2%, 45%, 0.473);
+}
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    background-color: var(--TEXT-COLOR);
+}
+/*.main-area{
+    padding: 2rem;
+}*/
+.top_bar{
+    background-color: var(--BACKGROUNDCOLOR);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    color: var(--TEXT-COLOR);
+}
+.contact_span{
+    display: flex;
+    column-gap: 2em;
+}
+.Hekimalogo img{
+    height: 50px;
+    width: 50px;
+}
+nav ul{
+    display: inline-flex;
+    column-gap: 1rem;
+}
+ul{
+    list-style: none;
+}
+nav ul a{
+    padding: 0.6rem;
+    text-decoration: none;
+    color: var(--GRAYDARK-COLOR);
+    border-radius: 5px;
+    font-weight: 500;
+}
+nav ul li{
+    border-right: 1px solid var(--GRAYDARK-COLOR);
+    padding-right: 1rem;
+}
+nav ul li:last-child{
+    border-right: none;
+}
+nav ul li a:hover{
+    background-color: var(--GRAYDARK-COLOR);
+    color: var(--TEXT-COLOR);
+    transition: all 0.3s ease;
+} 
+.navigation_bar{
+    padding: 0.25rem 1rem;
+    background-color: var(--TEXT-COLOR);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /*box-shadow: 0 6px 8px var(--BOXNAVSHADOW);*/
+}
+#hamburg{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.navigation_column_bar{
+    display: flex;
+    justify-content: center;
+
+}
+.slogan{
+    display: none;
+}
+.close{
+    display: none;
+}
+.navigation_column_bar ul li{
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--BACKGROUNDCOLOR);
+    width: 80vw;
+    text-align: center;
+}
+.navigation_column_bar ul a{
+    text-decoration: none;
+    color: var(--GRAYDARK-COLOR);
+}
+.hamburger_menu{
+    display: none;
+    font-size: 1.5rem;
+    color: var(--GRAYDARK-COLOR);
+}
+.emblem_identity{
+    display: flex;
+    color: var(--GRAYDARK-COLOR);
+    width: 250px;
+    letter-spacing: -0.1rem;
+    cursor: pointer;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+.catch_phrase{
+    cursor: pointer;
+}
+.hero_section{
+    background-image: url('../img/hero_section3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+    background-position: center -100px;
+}
+.subcontact i{
+    margin-right: 4px;
+}
+.content{
+    background-color: hsla(0, 0%, 0%, 0.5);
+    height: 480px;
+    padding: 5rem 3rem;
+}
+.headline{
+    color: var(--TEXT-COLOR);
+    width: 600px;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    cursor: pointer;
+}
+.subheadline{
+    font-size: 0.7rem;
+    color: var(--TEXT-COLOR);
+    cursor: pointer;
+}
+.body_text{
+    padding-top: 1rem;
+    width: 550px;
+    color: var(--TEXT-COLOR);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.button_cta{
+    display: flex;
+    column-gap: 1rem;
+    padding-top: 1.5rem;
+}
+.button_cta a{
+    background-color: var(--BACKGROUNDCOLOR);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    color: var(--TEXT-COLOR);
+    border: 1px solid var(--TEXT-COLOR);
+}
+#cta_1{
+    background-color: var(--GRAYDARK-COLOR);
+}
+.button_cta a:hover{
+   background-color: transparent;
+   transition: all 0.3s ease;
+}
+#cta_1:hover{
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.the_list{
+    background-color: var(--GRAYDARK-COLOR);
+    padding: 1em;
+    text-align: center;
+    color: var(--TEXT-COLOR);
+}
+.the_list ul{
+     display: inline-flex;
+     column-gap: 3rem;
+}
+.explanation_area{
+    background-color: var(--GRAYDARK-COLOR);
+    color: var(--TEXT-COLOR);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+}
+.explanation_area p{
+    padding-bottom: 0.7rem;
+}
+.explanation_area i{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+.explanation_area h3{
+    padding-bottom: 1rem ;
+}
+.explanation_area a{
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+    color: var(--TEXT-COLOR);
+    border: 1px solid var(--TEXT-COLOR);
+    border-radius: 10px;
+}
+.service_list{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 1rem;
+    justify-content: center;
+    background-image: url(../img/Network-diagram.png);
+    background-image: center top;
+    background-size: cover;
+}
+.about_desc{
+    text-align: center;
+    padding: 4rem;
+    background-image: url(../img/overlay-orange-circle.png);
+    background-repeat: no-repeat;
+    background-position: center -110px;
+}
+.about_desc a{
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    background-color: var(--BACKGROUNDCOLOR);
+    color: var(--TEXT-COLOR)
+}
+.explanation_area a:hover{
+    background-color: var(--TEXT-COLOR);
+    color: var(--GRAYDARK-COLOR);
+}
+.about_desc h1{
+    padding-bottom: 0.5rem;
+}
+.about_desc p{
+    padding-bottom: 3rem;
+}
+.about_desc span{
+    color: var(--BACKGROUNDCOLOR);
+}
+footer{
+    background-color: var(--BACKGROUNDCOLOR);
+    text-align: center;
+}
+#footer_paragraph{
+    padding: 1rem;
+    color: var(--TEXT-COLOR);
+    font-weight: 500;
+}
+.footer{
+    display: flex ;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.logo_name{
+    color: var(--TEXT-COLOR);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo_name img{
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+}
+.links ul{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.links ul a{
+    text-decoration: none;
+    color: var(--TEXT-COLOR);
+}
+.links ul li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.links ul a:hover{
+    transform: scale(1.2);
+}
+.contact{
+    padding-top: 2rem;
+    color: var(--TEXT-COLOR);
+}
+.contact span{
+    padding: 2rem;
+}
+.illustrations img{
+    width: 200px;
+}
+.extra_images{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.desc_container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+.mission_section, .our_team, .about_desc p{
+    text-align: justify;
+}
+.illustrations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--BACKGROUNDCOLOR);
+    border-radius: 10px;
+    padding: 0.4rem;
+}
+.illustrations h2{
+    padding-top: 0.8rem;
+    color: var(--BACKGROUNDCOLOR)
+}
+.illustrations:hover{
+    transform: translateY(10px);
+}

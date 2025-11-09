@@ -1,0 +1,69 @@
+@media screen and (max-width: 930px){
+    .hero_section{
+        background-position: center top;
+    }
+}
+@media screen and (max-width: 762px){
+    nav{
+        display: none;
+        transition: all 0.3s ease;
+    }
+    .hamburger_menu{
+        display: block;
+        transition: all 0.2s ease;
+    }
+}
+@media screen and (max-width: 654px) {
+    .top_bar{
+        display: none;
+        transition: all 0.3s ease;
+    }
+    .logo_name{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .desc_container{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:902px) {
+    .the_list ul{
+        column-gap: 1.5rem;
+        font-size: 0.8rem;
+        transition: all 0.2s ease;
+    }
+    
+}
+@media screen and (max-width: 677px) {
+    .the_list ul{
+        display: none;
+    }
+    .slogan{
+        display: block;
+    }
+    .headline{
+        width: 80vw;
+        font-size: 0.8rem;
+    }
+    .body_text{
+        width: 80vw;
+        text-align: justify;
+    }
+    
+}
+@media screen and (max-width: 413px) {
+    .content{
+        padding: 3rem 2rem;
+    }
+    .button_cta{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .button_cta a{
+        width: 155px;
+    }
+}
