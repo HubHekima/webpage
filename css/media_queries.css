@@ -65,6 +65,7 @@
     }
     .button_cta a{
         width: 155px;
+        padding: 0.5rem 1rem;
         font-size: 0.8rem;
     }
 }
