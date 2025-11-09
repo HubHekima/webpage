@@ -52,6 +52,7 @@
     .body_text{
         width: 80vw;
         text-align: justify;
+        padding-top: 0.8rem;
     }
     
 }
@@ -62,10 +63,19 @@
     .button_cta{
         flex-direction: column;
         gap: 0.5rem;
+        padding-top: 0.9rem;
     }
     .button_cta a{
         width: 155px;
         padding: 0.5rem 1rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
+    .service_list{
+        grid-template-columns: repeat(auto-fit, 300px);
+        transition: all 0.3s ease;
+    }
+    .explanation_area h3{
+    padding-bottom: 0.8rem ;
 }
+}
+
