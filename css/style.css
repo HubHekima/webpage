@@ -318,7 +318,7 @@ footer{
     align-items: center;
     border: 1px solid var(--BACKGROUNDCOLOR);
     border-radius: 10px;
-    padding: 0.4rem;
+    padding: 0.3rem;
 }
 .illustrations h2{
     padding-top: 0.8rem;
@@ -326,4 +326,5 @@ footer{
 }
 .illustrations:hover{
     transform: translateY(10px);
+    transition: all 0.3s ease;
 }
